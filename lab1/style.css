@@ -1,0 +1,109 @@
+.row {
+    display: flex;
+}
+
+.right-column {
+    flex: 70%;
+    padding: 0 10px 10px 10px;
+}
+
+.right-column h3 {
+    color: #ec8484;
+}
+
+.left-column {
+    background-image: url('bnd.jpg');
+    background-size: 100%;
+    flex: 30%;
+    padding: 0 10px 10px 10px;
+}
+
+.left-column h3 {
+    color: white;
+}
+
+.subtitle-date {
+    float: right;
+}
+
+.subtitle-right {
+    border-bottom: 2px;
+    border-color: #ec8484;
+    border-bottom-style: solid;
+}
+
+.content-right {
+    font-size: 13px;
+    padding-left: 1em;
+}
+
+.content-right ul li {
+    font-size: 13px;
+}
+
+.content-left {
+    background-color: white;
+    padding: 10px;
+}
+
+.content-left p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.content-left ul li, h4 {
+    font-size: 13px;
+}
+
+.content-left ul {
+    padding-left: 20px;
+}
+
+.tech-columns {
+    font-size: 12px;
+    flex: 50%;
+}
+
+.details {
+    color: #ec8484;
+    font-size: 10px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: circle;
+}
+
+h1 {
+    color: white;
+    border-bottom: 3px;
+    border-color: white;
+    border-bottom-style: solid;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 5px;
+}
+
+h2 {
+    color: white;
+    float: right;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top: 20px;
+    margin: 5px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
