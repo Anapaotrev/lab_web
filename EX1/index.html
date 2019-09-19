@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Primer Examen Parcial</title>
+  <link rel="stylesheet" type="text/css" href="css/stars.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <h1>Señor Burrito reviews</h1> 
+      <button id="escribe_reseña" class="button">Escribe una reseña</button> 
+    </div>
+    
+    <section id="seccion_comentario" class="hidden">
+
+      <fieldset class="rating">
+        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+      </fieldset>
+      <div>
+        <div class="input-container">
+          <input type="text" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="input-container">
+          <input type="text" id="email" placeholder="email">
+        </div>
+      </div>
+      <div id="comentario" placeholder="Escribe sobre tu experiencia" contentEditable="true"></div>
+      <span id="error_comment" class="error hidden">Para poder dejar una reseña es necesario llenar el nombre y un comentario</span>
+      <div class="buttons-container">
+        <span class="button button-txt" id="btn-publicar">Publicar</span>
+        <span class="button button-txt" id="btn-limpiar">Cancelar</span>      
+      </div>
+      
+    </section>
+    
+    <section id="seccion_reviews">
+      <!-- Agregar las reviews dinamicamente aqui! -->
+
+      <!-- <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div> -->
+    </section>
+
+  </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
