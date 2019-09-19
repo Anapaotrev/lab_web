@@ -9,6 +9,7 @@ $('#escribe_reseña').on('click', function(event) {
   if ($('#seccion_comentario').hasClass('hidden')) {
     $('#seccion_comentario').removeClass('hidden');
     $('#escribe_reseña').text('Dejar de escribir reseña');
+    cleanComment();
   } else {
     $('#seccion_comentario').addClass('hidden');
     $('#escribe_reseña').text('Escribe una reseña');
@@ -28,7 +29,7 @@ $.ajax({
     let comments = '';
 
     $(data).find('comment').each(function() {
-      comments += '<div>';
+      comments += '<div class="review">';
       const info = `<p class="nombre">
                       ${$(this).find('name').text()}
                       <span class="email">${$(this).find('name').attr('email')}</span>
